@@ -1,0 +1,9 @@
+nltk
+transformers
+pandas
+protobuf
+ipywidgets
+openai
+langchain
+tiktoken
+fpdf2
