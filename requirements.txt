@@ -12,4 +12,9 @@ langchain_openai
 pypdf
 chromadb==0.4.17
 numpy
-sqlite3
+pymupdf
+pdfplumber
+pytesseract
+sentence-transformers
+matplotlib
+parser-libraries

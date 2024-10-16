@@ -163,3 +163,8 @@ cython_debug/
 credentials/
 aclImdb/
 data/
+chroma_data/
+database_RAG/
+extracted_imgages/
+static/
+test_data/
