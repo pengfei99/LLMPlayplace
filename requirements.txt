@@ -7,3 +7,9 @@ openai
 langchain
 tiktoken
 fpdf2
+langchain_community
+langchain_openai
+pypdf
+chromadb==0.4.17
+numpy
+sqlite3
