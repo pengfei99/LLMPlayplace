@@ -165,6 +165,6 @@ aclImdb/
 data/
 chroma_data/
 database_RAG/
-extracted_imgages/
+extracted_images/
 static/
 test_data/
