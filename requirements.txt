@@ -18,3 +18,4 @@ pytesseract
 sentence-transformers
 matplotlib
 parser-libraries
+more_itertools
