@@ -19,3 +19,5 @@ sentence-transformers
 matplotlib
 parser-libraries
 more_itertools
+faiss-cpu
+networkx
