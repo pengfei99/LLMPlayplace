@@ -8,7 +8,7 @@ locally. But configuring your working environment and getting LLMs to run on you
 
 You can find the official github page [here](https://github.com/ollama/ollama).
 
-## Run ollama via docker
+## 1. Run ollama via docker
 
 ```shell
 # get the image
@@ -24,8 +24,96 @@ c9dfb3742d6c   ollama/ollama   "/bin/ollama serve"   About a minute ago   Up Abo
 # Run model locally, the below code download and deploy a model called llama3 via ollama in the container ollama
 
 docker exec -it ollama ollama run llama3
+
 # the detail of the model can be found here
 https://ollama.com/library/llama3
 # the model lib for ollama 
 https://ollama.com/library
 ```
+
+## 2. Run ollama on linux
+
+The details install doc can be found [here](https://github.com/ollama/ollama/blob/main/docs/linux.md)
+
+### 2.1 Use the default installation script
+
+In most of the case, the default installation script is enough to have the ollama running
+
+```shell
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+### 2.2 The detailed manual installation steps
+
+```shell
+# 1 Download and extract the package: 
+curl -L https://ollama.com/download/ollama-linux-amd64.tgz -o ollama-linux-amd64.tgz
+
+# 2. untar the package and put it in /usr
+sudo tar -C /usr -xzf ollama-linux-amd64.tgz
+
+# start the ollama service
+ollama serve
+ 
+# In another terminal, verify that Ollama is running:
+ollama -v
+
+```
+
+#### 2.2.1 Adding Ollama as a startup service (recommended)
+
+ **This step is inculed in the default installation script.**
+ 
+```shell
+# create user and group for Ollama
+sudo useradd -r -s /bin/false -U -m -d /usr/share/ollama ollama
+sudo usermod -a -G ollama $(whoami)
+
+# create a service file in /etc/systemd/system/ollama.service
+[Unit]
+Description=Ollama Service
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/ollama serve
+User=ollama
+Group=ollama
+Restart=always
+RestartSec=3
+Environment="PATH=$PATH"
+
+[Install]
+WantedBy=default.target
+
+#  start the service:
+sudo systemctl daemon-reload
+sudo systemctl enable ollama
+```
+
+## 3. GPU
+
+### 3.1 nvidia GPU
+For nvidia GPU, you need to donwload and install the [CUDA](https://developer.nvidia.com/cuda-downloads)
+
+Verify that the drivers are installed by running the following command, which should print details about your GPU:
+
+```shell
+nvidia-smi
+```
+
+## 4. Some basic ollama command
+
+```shell
+# download a model
+ollama pull llama3.2
+
+# run a model, if the model does not exist locally, it will download it first
+ollama run llama3
+
+```
+
+> after run, you will get a prompt which can take questions.
+
+## 5. Customize a prompt
+
+https://github.com/ollama/ollama/blob/main/docs/import.md
