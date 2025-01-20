@@ -1,6 +1,3 @@
-surya-ocr
-python-magic
-sentence-transformers
 numpy
 chromadb
 langchain-ollama
