@@ -8,7 +8,7 @@ locally. But configuring your working environment and getting LLMs to run on you
 
 You can find the official github page [here](https://github.com/ollama/ollama).
 
-## 1. Run ollama via docker
+## Run ollama via docker
 
 ```shell
 # get the image
@@ -24,6 +24,10 @@ c9dfb3742d6c   ollama/ollama   "/bin/ollama serve"   About a minute ago   Up Abo
 # Run model locally, the below code download and deploy a model called llama3 via ollama in the container ollama
 
 docker exec -it ollama ollama run llama3
+
+# You can also get a prompt of the ollama container
+docker exec -it ollama bash
+# after the above command
 
 # the detail of the model can be found here
 https://ollama.com/library/llama3
