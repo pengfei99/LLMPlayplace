@@ -1,3 +1,4 @@
 numpy
 chromadb
 langchain-ollama
+notebook
