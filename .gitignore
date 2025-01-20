@@ -168,3 +168,4 @@ database_RAG/
 extracted_images/
 static/
 test_data/
+llm_venv/
