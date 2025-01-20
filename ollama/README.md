@@ -121,7 +121,23 @@ nvidia-smi
 
 ### 3.2 Monitor GPU usage
 
+When you run ollama models, it will use GPU when it can. But if there are bugs in the GPU drivers, or CUDA drivers, it
+will fall back to use CPU.
 
+
+```shell
+nvidia-smi
+```
+
+You need to check the GPU usage percentage. If the usage percentage is **Zero**, then the gpu is idle. 
+The below figure is an example of which the GPU is idle.
+![gpu_not_used.png](../images/gpu_not_used.png)
+
+The below figure is an example of which the GPU is used by Ollama.
+![gpu_not_used.png](../images/gpu_used.png)
+
+> If the model size is larger than the video card memory, ollama will have to use CPU. Becasue
+> the model can't be loaded into the GPU.
 
 ## 4. Some basic ollama command
 
