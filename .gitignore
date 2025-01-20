@@ -169,3 +169,4 @@ extracted_images/
 static/
 test_data/
 llm_venv/
+vector_db
