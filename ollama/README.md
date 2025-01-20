@@ -27,7 +27,15 @@ docker exec -it ollama ollama run llama3
 
 # You can also get a prompt of the ollama container
 docker exec -it ollama bash
-# after the above command
+# after the above command, you should have a bash prompt which allow you to run any command
+
+# download a model
+ollama pull steamdj/llama3.1-cpu-only
+
+# run a model
+ollama run steamdj/llama3.1-cpu-only
+
+# after the run command, you should see a prompt which you can send query to the deployed model.
 
 # the detail of the model can be found here
 https://ollama.com/library/llama3
