@@ -53,6 +53,12 @@ In most of the case, the default installation script is enough to have the ollam
 
 ```shell
 curl -fsSL https://ollama.com/install.sh | sh
+
+# after installation, start the ollama service
+ollama serve
+ 
+# In another terminal, verify that Ollama is running:
+ollama -v
 ```
 
 ### 2.2 The detailed manual installation steps
@@ -112,6 +118,10 @@ Verify that the drivers are installed by running the following command, which sh
 ```shell
 nvidia-smi
 ```
+
+### 3.2 Monitor GPU usage
+
+
 
 ## 4. Some basic ollama command
 
