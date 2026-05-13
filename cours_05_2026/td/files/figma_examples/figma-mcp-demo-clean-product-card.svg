@@ -1,0 +1,48 @@
+<svg width="560" height="760" viewBox="0 0 560 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="760" fill="#F6F7FB"/>
+  <g id="ProductCard">
+    <rect x="80" y="56" width="400" height="648" rx="32" fill="#FFFFFF"/>
+    <rect x="112" y="88" width="336" height="260" rx="28" fill="#EEF0FF"/>
+
+    <g id="Badge">
+      <rect x="136" y="112" width="88" height="36" rx="18" fill="#DCFCE7"/>
+      <text x="160" y="136" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#166534">NEW</text>
+    </g>
+
+    <g id="Rating">
+      <rect x="352" y="112" width="72" height="36" rx="18" fill="#111827"/>
+      <text x="370" y="136" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">4.8 ★</text>
+    </g>
+
+    <g id="LampIllustration">
+      <circle cx="280" cy="214" r="72" fill="#FFE8AA"/>
+      <path d="M228 206H332L305 284H255L228 206Z" fill="#FFCC66"/>
+      <rect x="268" y="282" width="24" height="72" rx="8" fill="#1F2937"/>
+      <rect x="204" y="342" width="152" height="24" rx="12" fill="#1F2937"/>
+      <path d="M166 236C177 169 222 130 280 130C338 130 383 169 394 236" stroke="#7C3AED" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <text x="112" y="418" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#111827">Nova Desk Lamp</text>
+    <text x="112" y="464" font-family="Inter, Arial, sans-serif" font-size="18" fill="#4B5563">Minimal LED lamp with warm dimming,</text>
+    <text x="112" y="492" font-family="Inter, Arial, sans-serif" font-size="18" fill="#4B5563">USB-C charging and recycled aluminum.</text>
+
+    <text x="112" y="548" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#6B7280">Color</text>
+    <g id="ColorOptions">
+      <circle cx="126" cy="586" r="16" stroke="#7C3AED" stroke-width="3"/>
+      <circle cx="126" cy="586" r="11" fill="#111827"/>
+      <circle cx="166" cy="586" r="12" fill="#D1D5DB" stroke="#E5E7EB" stroke-width="2"/>
+      <circle cx="206" cy="586" r="12" fill="#F59E0B" stroke="#E5E7EB" stroke-width="2"/>
+    </g>
+
+    <g id="Price">
+      <text x="112" y="660" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">$89</text>
+      <text x="190" y="657" font-family="Inter, Arial, sans-serif" font-size="18" fill="#9CA3AF">$119</text>
+      <line x1="188" y1="650" x2="236" y2="650" stroke="#9CA3AF" stroke-width="2"/>
+    </g>
+
+    <g id="CTA">
+      <rect x="268" y="616" width="180" height="60" rx="20" fill="#7C3AED"/>
+      <text x="310" y="653" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Add to cart</text>
+    </g>
+  </g>
+</svg>

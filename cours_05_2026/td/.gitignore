@@ -1,0 +1,14 @@
+**__pycache__
+data*
+env*
+.env*
+venv*
+.venv*
+.rag*
+.memory*
+outputs/
+.agent*
+openai_api_key.txt
+nohup.out
+thomas_snippets/
+local_thomas/
